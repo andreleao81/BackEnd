@@ -1,7 +1,7 @@
 from app.extensions import db
 from app.model import BaseModel
 
-class Produto():
+class Produto(BaseModel):
 
     id = db.Column(db.Integer, primary_key = True)
     marca = db.Column() # string limitada
