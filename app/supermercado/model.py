@@ -2,9 +2,10 @@ from app.extensions import db
 from app.model import BaseModel
 
 class Supermercado(BaseModel):
+    __tablename__ = 'supermercado'
 
     id = db.Column(db.Integer, primary_key = True)
-    nome = db.Column() # string limitada
+    nome = db.Column(db.String(100)) # string limitada
     cnpj = db.Column(db.String(14)) 
     img  = db.Coulumn() # link
-    horario = db.Column()
+    horario_funcionamento = db.Column()

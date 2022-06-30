@@ -1,2 +1,4 @@
 class Config:
-    pass
+    SQLALCHEMY_DATABASE_URI = "sqlite:///data.sqlite"
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    DEBUG = True
