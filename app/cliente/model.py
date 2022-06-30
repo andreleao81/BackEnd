@@ -14,6 +14,7 @@ class Cliente(BaseModel):
     cpf = db.Column(db.String(11)) 
     senha = db.Column(db.String(100))
     adress = db.Column(db.String(100)) 
+    telefone = db.Column(db.Integer())
 
     entregas = db.relationship("Entrega", backref="cliente")
   

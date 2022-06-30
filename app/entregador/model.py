@@ -9,4 +9,5 @@ class Entregador(BaseModel):
     cpf = db.Column(db.String(11)) 
     senha = db.Column(db.String(50))
     entregas = db.Column()
+    telefone = db.Column()
     

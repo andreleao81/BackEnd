@@ -8,5 +8,4 @@ class Produto(BaseModel):
     marca = db.Column(db.String(100)) # string limitada
     preco = db.Column(db.Integer())
     categoria = db.Column()
-    servico = db.Column()
     image = db.Column()
