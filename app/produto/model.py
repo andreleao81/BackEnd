@@ -2,10 +2,11 @@ from app.extensions import db
 from app.model import BaseModel
 
 class Produto(BaseModel):
+    __tablename__ = 'produto'
 
-    id = db.Column(db.Integer, primary_key = True)
-    marca = db.Column() # string limitada
-    preco = db.Column()
+   
+    marca = db.Column(db.String(100)) # string limitada
+    preco = db.Column(db.Integer())
     categoria = db.Column()
     servico = db.Column()
-    img = db.Column()
+    image = db.Column()

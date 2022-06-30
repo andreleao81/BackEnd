@@ -13,7 +13,7 @@ def create_app():
 
     app.config.from_object(Config)
 
-    app.init_app(db)
+    db.init_app(app)
     migrate.init_app(app, db)
 
     app.register_blueprint(cliente_api)
